@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- METADATA GOES HERE -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🎓 International Students in Canada</title>
+
+    <!-- BOOTSTRAP 5 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- JQUERY -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font icon -->
+    <script
+      src="https://kit.fontawesome.com/70d59a0dbe.js"
+      crossorigin="anonymous"
+    ></script>
+
+  </head>
+
+
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-12 mx-auto">
+                <h1>🎓 Canada: A Magnet for International Students</h1>
+                <p class="note">
+                    <i class="fa-regular fa-clock me-2"></i> Jan 30, 2025
+                </p>
+                <p class="note">
+                    <i class="fa-regular fa-chart-bar me-2"></i> Latest data as of November 30, 2023
+                </p>
+                <img class="w-100 mb-3" src="img/internationalstudent2.png" alt="internationalstudent" />
+                <p> 
+                    The number of study permit holders in Canada has steadily risen over the past decade, with an increasing number of students opting to pursue their education here. By the end of 2023, Canada surpassed one million study permit holders for the first time—double the figure from 2020 and nearly triple that of 2015. This growth places Canada among the top countries with the largest international student populations worldwide. The country’s educational system, offering a wide range of options from public to private institutions, continues to be a major draw for international students.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-sm-12 mx-auto">
+                <h2>🍁 What Attract International Students to Canada</h2>
+                <p> 
+                    <strong>World-Class Education:</strong> Canada is home to some of the world’s top universities, renowned for academic excellence, research, and innovation. More than 20 institutions rank among the best globally (QS World University Rankings), offering high-quality education and access to cutting-edge advancements across various fields.
+                </p>
+                <p> 
+                    <strong>Work While Studying:</strong> International students with a valid study permit can work up to 20 hours per week during the academic term and full-time during breaks, both on and off campus. This flexibility allows students to gain valuable work experience while helping to cover living expenses, making studying in Canada both financially and professionally rewarding.
+                </p>
+                <p> 
+                    <strong>A Diverse and Inclusive Society:</strong> Canada is one of the most multicultural countries in the world, welcoming people from all backgrounds. With two official languages—English and French—and a strong commitment to diversity, international students can experience a supportive and inclusive environment that fosters cross-cultural connections, creativity, and innovation.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-sm-12 mx-auto">
+                <h2>📊 International Students Through The Years</h2>
+                <p>
+                    Canada's international student population reached a record 1,040,985 in 2023, surpassing one million for the first time, according to Immigration, Refugees and Citizenship Canada (IRCC). This marks a nearly 10% increase over the government's 2023 projection of 950,000. After steady growth, the pandemic caused the first decline in a decade in 2020. However, numbers rebounded quickly, rising 17% in 2021, 30% in 2022, and 29% in 2023. The rapid growth has brought Canadian institutions close to matching U.S. student numbers, despite Canada’s population being much smaller. 
+                </p>
+
+                <div>
+                    <canvas id="myChart1"></canvas>
+                </div>
+
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+                <script>
+                    const ctx = document.getElementById("myChart1");
+
+                    new Chart(ctx, {
+                    type: "bar",
+                    data: {
+                        labels: [
+                        "2015",
+                        "2016",
+                        "2017",
+                        "2018",
+                        "2019",
+                        "2020",
+                        "2021",
+                        "2022",
+                        "2023",
+                        ],
+                        datasets: [
+                        {
+                            label: "# of international students",
+                            data: [
+                            352325, 410560, 490760, 566950, 637855, 527365, 617250,
+                            807260, 1040985,
+                            ],
+                            backgroundColor: "rgba(255, 0, 0, 0.2)", // Red with transparency
+                            borderColor: "rgba(255, 0, 0, 1)", // Solid red
+                            borderWidth: 1,
+                        },
+                        ],
+                    },
+                    options: {
+                        scales: {
+                        y: {
+                            beginAtZero: true,
+                        },
+                        },
+                    },
+                    });
+                </script>
+                <p class="note mt-3">
+                    Note: The numbers reflect students holding valid study permits and do not include short-term students who are not required to have a permit.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-sm-12 mx-auto">
+                <h2>🌍 Where Do Inbound Students Come From?</h2>
+                <p>
+                    India and China continue to make up just over half of the international student population in Canada. While the number of Chinese students declined slightly after the 2020 pandemic, it remains substantial. In contrast, Indian student numbers have seen dramatic growth, rising from one-third of all international students in 2020 to 41% in 2023. Additionally, there has been significant growth in students from the Philippines and Nigeria, now the third and fourth largest sources of international students in Canada by 2023. Overall, Canada's international student population remains diverse and dynamic.
+                </p>
+                <div>
+                    <canvas id="myChart2" height="200"></canvas>
+                </div>
+
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+                <script>
+                    const ctx2 = document.getElementById("myChart2");
+
+                    new Chart(ctx2, {
+                    type: "line",
+                    data: {
+                        labels: [
+                        "2015",
+                        "2016",
+                        "2017",
+                        "2018",
+                        "2019",
+                        "2020",
+                        "2021",
+                        "2022",
+                        "2023",
+                        ],
+                        datasets: [
+                        {
+                            label: "China",
+                            data: [
+                            117485, 131830, 140530, 142958, 140550, 116215, 104560,
+                            100075, 101150,
+                            ],
+                            backgroundColor: "rgba(255, 0, 0, 0.2)",
+                            borderColor: "rgba(255, 0, 0, 1)",
+                            borderWidth: 1,
+                        },
+                        {
+                            label: "India",
+                            data: [
+                            48510, 76320, 123940, 172625, 218540, 179510, 216515,
+                            319130, 427085,
+                            ],
+                            backgroundColor: "rgba(230, 130, 0, 0.2)",
+                            borderColor: "rgba(230,130, 0, 1)",
+                            borderWidth: 1,
+                        },
+                        {
+                            label: "France",
+                            data: [
+                            20065, 20695, 21925, 22745, 23850, 18200, 26380, 27010,
+                            26980,
+                            ],
+                            backgroundColor: "rgba(60, 180, 0, 0.2)",
+                            borderColor: "rgba(60, 180, 0, 1)",
+                            borderWidth: 1,
+                        },
+                        {
+                            label: "South Korea",
+                            data: [
+                            19695, 21270, 23050, 24195, 24090, 18070, 15710, 16430,
+                            15930,
+                            ],
+                            backgroundColor: "rgba(120, 50, 205, 0.2)",
+                            borderColor: "rgba(120, 50, 205, 1)",
+                            borderWidth: 1,
+                        },
+                        {
+                            label: "Nigeria",
+                            data: [
+                            9905, 10735, 10880, 11290, 11870, 10515, 13525, 21555,
+                            45965,
+                            ],
+                            backgroundColor: "rgba(0, 0, 250, 0.2)",
+                            borderColor: "rgba(0, 0, 250, 1)",
+                            borderWidth: 1,
+                        },
+                        {
+                            label: "Philippines",
+                            data: [
+                            1980, 3350, 3950, 5070, 7730, 7225, 15295, 32455, 48870,
+                            ],
+                            backgroundColor: "rgba(255, 80, 230, 0.2)",
+                            borderColor: "rgba(255, 80, 230, 1)",
+                            borderWidth: 1,
+                        },
+                        {
+                            label: "Iran",
+                            data: [
+                            4490, 5145, 7415, 10885, 14610, 13970, 16830, 21040,
+                            24960,
+                            ],
+                            backgroundColor: "rgba(255, 200, 0, 0.2)",
+                            borderColor: "rgba(255, 200, 0, 1)",
+                            borderWidth: 1,
+                        },
+                        {
+                            label: "Vietnam",
+                            data: [
+                            4855, 7500, 14095, 20330, 21480, 18815, 16155, 16045,
+                            17175,
+                            ],
+                            backgroundColor: "rgba(0, 150, 250, 0.2)",
+                            borderColor: "rgba(0, 150, 250, 1)",
+                            borderWidth: 1,
+                        },
+                        ],
+                    },
+                    options: {
+                        scales: {
+                        y: {
+                            beginAtZero: true,
+                        },
+                        },
+                    },
+                    });
+                </script>
+                <p class="note mt-3">
+                    Note: The chart displays only the top sending countries.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-sm-12 mx-auto">
+                <h2>📍 Where International Students Stay in Canada</h2>
+                <p>
+                    Over 80% of international students in Canada choose Ontario, British Columbia, or Quebec for their top-ranked universities, strong job markets, and high quality of life. These provinces also feature multicultural cities and student-friendly policies. Ontario hosts the largest share of international students, increasing from 43% in 2015 to 52% in 2023. Its diverse and welcoming environment continues to draw a growing number of international students.
+                </p>
+                <p>
+                    While British Columbia and Quebec remain the second and third most popular destinations even though their share has declined slightly over the years. Alberta, Manitoba, and Nova Scotia also attract a significant number of international students. Despite their share staying steady, the overall increase in students coming to Canada means that the number of international students in these provinces is also on the rise.
+                </p>
+
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 mt-3" >
+                        <div>
+                            <canvas id="myChart3"></canvas>
+                        </div>
+
+                        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+                        <script>
+                            const ctx3 = document.getElementById("myChart3");
+
+                            new Chart(ctx3, {
+                            type: "doughnut",
+                            data: {
+                                labels: [
+                                "Ontario",
+                                "British Columbia",
+                                "Quebec",
+                                "Alberta",
+                                "Manitoba",
+                                "Nova Scotia",
+                                "Others",
+                                "Province/Territory not stated",
+                                ],
+                                datasets: [
+                                {
+                                    label: "Percentage of International Students",
+                                    data: [43, 27, 14, 6, 3, 3, 3, 1], // Example data
+                                    backgroundColor: [
+                                    "rgba(255, 99, 132, 0.3)",
+                                    "rgba(255, 200, 0, 0.3)",
+                                    "rgba(75, 192, 192, 0.3)",
+                                    "rgba(153, 102, 255, 0.3)",
+                                    "rgba(50, 0, 250, 0.3)",
+                                    "rgba(255, 80, 230, 0.3)",
+                                    "rgba(60, 180, 0, 0.3)",
+                                    "rgba(0, 150, 250, 0.3)",
+                                    ],
+                                    borderColor: [
+                                    "rgba(255, 99, 132, 1)",
+                                    "rgba(255, 200, 0, 1)",
+                                    "rgba(75, 192, 192, 1)",
+                                    "rgba(153, 102, 255, 1)",
+                                    "rgba(50, 0, 250, 1)",
+                                    "rgba(255, 80, 230, 1)",
+                                    "rgba(60, 180, 0, 1)",
+                                    "rgba(0, 150, 250, 1)",
+                                    ],
+                                    borderWidth: 1.5,
+                                },
+                                ],
+                            },
+                            options: {
+                                responsive: true,
+                                plugins: {
+                                legend: {
+                                    position: "top",
+                                },
+                                tooltip: {
+                                    callbacks: {
+                                    label: function (tooltipItem) {
+                                        return (
+                                        tooltipItem.label + ": " + tooltipItem.raw + "%"
+                                        );
+                                    },
+                                    },
+                                },
+                                },
+                            },
+                            });
+                        </script>
+                        <h6 class="mt-3 text-center">
+                            International students by province in 2015
+                        </h6>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 mt-3">
+                        <div>
+                            <canvas id="myChart4"></canvas>
+                        </div>
+
+                        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+                        <script>
+                            const ctx4 = document.getElementById("myChart4");
+
+                            new Chart(ctx4, {
+                            type: "doughnut",
+                            data: {
+                                labels: [
+                                "Ontario",
+                                "British Columbia",
+                                "Quebec",
+                                "Alberta",
+                                "Manitoba",
+                                "Nova Scotia",
+                                "Others",
+                                "Province/Territory not stated",
+                                ],
+                                datasets: [
+                                {
+                                    label: "Percentage of International Students",
+                                    data: [52, 20, 11, 6, 3, 3, 3, 2], // Example data
+                                    backgroundColor: [
+                                    "rgba(255, 99, 132, 0.3)",
+                                    "rgba(255, 200, 0, 0.3)",
+                                    "rgba(75, 192, 192, 0.3)",
+                                    "rgba(153, 102, 255, 0.3)",
+                                    "rgba(50, 0, 250, 0.3)",
+                                    "rgba(255, 80, 230, 0.3)",
+                                    "rgba(60, 180, 0, 0.3)",
+                                    "rgba(0, 150, 250, 0.3)",
+                                    ],
+                                    borderColor: [
+                                    "rgba(255, 99, 132, 1)",
+                                    "rgba(255, 200, 0, 1)",
+                                    "rgba(75, 192, 192, 1)",
+                                    "rgba(153, 102, 255, 1)",
+                                    "rgba(50, 0, 250, 1)",
+                                    "rgba(255, 80, 230, 1)",
+                                    "rgba(60, 180, 0, 1)",
+                                    "rgba(0, 150, 250, 1)",
+                                    ],
+                                    borderWidth: 1.5,
+                                },
+                                ],
+                            },
+                            options: {
+                                responsive: true,
+                                plugins: {
+                                legend: {
+                                    position: "top",
+                                },
+                                tooltip: {
+                                    callbacks: {
+                                    label: function (tooltipItem) {
+                                        return (
+                                        tooltipItem.label + ": " + tooltipItem.raw + "%"
+                                        );
+                                    },
+                                    },
+                                },
+                                },
+                            },
+                            });
+                        </script>
+                        <h6 class="mt-3 text-center">
+                            International students by province in 2023
+                        </h6>
+                    </div>
+                </div>
+            </div>  
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-sm-12 mx-auto">
+                <h2>📈 Future of International Students</h2>
+                <p>
+                    Canada has become a top destination for international students, with numbers soaring in recent years. These students bring diversity to the country and make significant contributions to the economy. However, the influx of international students is putting pressure on affordable housing and Canada’s healthcare system, which is struggling to keep up with demand. Many economists believe that the government’s immigration targets are too high, and a Nanos Research poll in September 2023 found that 55% of Canadians want fewer international students. Concerns over the quality of education at some institutions have also led the government to implement a temporary cap on new study permits for the next two years in an effort to manage growth and stabilize the number of international students entering Canada in 2024 and 2025.
+                </p>
+                <p>
+                    Despite these measures, the demand to study in Canada remains strong, and international students’ desire to come here shows no signs of fading. Canada also recognizes the potential downsides of limiting student numbers. For example, Ontario, with the highest concentration of international students, depends on their tuition fees to help fund public colleges. Additionally, industries like restaurants and retail have raised concerns that cutting back on international students could lead to a worker shortage. While the future of international students in Canada remains uncertain, it’s clear that the country will continue to be a popular choice. While competition for study permits may increase, Canada’s appeal to international students is unlikely to fade anytime soon.
+                </p>
+
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
